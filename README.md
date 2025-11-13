@@ -137,3 +137,4 @@ const NOTIFY_INTERVAL = 3600 * 1000; // 1 小时
 
 ---
 
+基于 [hyunbot](https://github.com/Tsaihyun/hyunbot/tree/main) 修改
