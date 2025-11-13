@@ -49,18 +49,18 @@ HyunBot 是一个基于 Cloudflare Workers 构建的 Telegram 中转机器人，
 
 | 变量 | 说明 | 默认地址 |
 |------|------|-----------|
-| **START_MSG_ZH_URL** | 机器人 `/start` 指令时加载的中文欢迎内容 | [startMessage.zh.md](https://raw.githubusercontent.com/adm1nSQL/hyunbot/refs/heads/main/data/startMessage.zh.md) |
-| **START_MSG_EN_URL** | 机器人 `/start` 指令时加载的英文欢迎内容 | [startMessage.en.md](https://raw.githubusercontent.com/adm1nSQL/hyunbot/refs/heads/main/data/startMessage.en.md) |
-| **DEFAULT_BLOCKLIST_URL** | 自动拉取的远程拦截词表地址 | [blocklist.txt](https://raw.githubusercontent.com/adm1nSQL/hyunbot/refs/heads/main/data/blocklist.txt) |
+| **START_MSG_ZH_URL** | 机器人 `/start` 指令时加载的中文欢迎内容 | [startMessage.zh.md](https://raw.githubusercontent.com/adm1nSQL/nfdtext/refs/heads/main/data/startMessage.zh.md) |
+| **START_MSG_EN_URL** | 机器人 `/start` 指令时加载的英文欢迎内容 | [startMessage.en.md](https://raw.githubusercontent.com/adm1nSQL/nfdtext/refs/heads/main/data/startMessage.en.md) |
+| **DEFAULT_BLOCKLIST_URL** | 自动拉取的远程拦截词表地址 | [blocklist.txt](https://raw.githubusercontent.com/adm1nSQL/nfdtext/refs/heads/main/data/blocklist.txt) |
 
 ### ✅ 修改方法
 
 在 Worker 代码顶部找到以下三行：
 
 ```js
-const START_MSG_ZH_URL = 'https://raw.githubusercontent.com/adm1nSQL/hyunbot/refs/heads/main/data/startMessage.zh.md';
-const START_MSG_EN_URL = 'https://raw.githubusercontent.com/adm1nSQL/hyunbot/refs/heads/main/data/startMessage.en.md';
-const DEFAULT_BLOCKLIST_URL = 'https://raw.githubusercontent.com/adm1nSQL/hyunbot/refs/heads/main/data/blocklist.txt';
+const START_MSG_ZH_URL = 'https://raw.githubusercontent.com/adm1nSQL/nfdtext/refs/heads/main/data/startMessage.zh.md';
+const START_MSG_EN_URL = 'https://raw.githubusercontent.com/adm1nSQL/nfdtext/refs/heads/main/data/startMessage.en.md';
+const DEFAULT_BLOCKLIST_URL = 'https://raw.githubusercontent.com/adm1nSQL/nfdtext/refs/heads/main/data/blocklist.txt';
 ```
 
 替换为你自己仓库或其他托管平台上的文件地址。例如：
